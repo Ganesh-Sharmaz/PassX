@@ -16,14 +16,14 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAyMYsKMwOWeiWl_a2o0Q9ybHcoHcmBcAw",
-    authDomain: "passx-b9457.firebaseapp.com",
-    projectId: "passx-b9457",
-    storageBucket: "passx-b9457.appspot.com",
-    messagingSenderId: "1078047940805",
-    appId: "1:1078047940805:web:b3a8c1e83317013b4150ac",
-    measurementId: "G-BF41YRMRB0",
-    databaseURL: "https://passx-b9457-default-rtdb.firebaseio.com",
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    projectId: process.env.PROJECT_ID,
+    storageBucket: process.env.STORAGE_BUCKET,
+    messagingSenderId: process.env.MESSAGING_SENDER_ID,
+    appId: process.env.API_ID,
+    measurementId: process.env.MEASUREMENT_ID,
+    databaseURL: process.env.DATABASE_URL,
 };
 
 // Initialize Firebase
