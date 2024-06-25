@@ -48,7 +48,7 @@ const database = getDatabase(app);
                 const user = result.user;
                 console.log("User signed in: ", user);
                 localStorage.setItem("displayName", user.displayName);
-                window.location.href = "../pages/index.html";
+                window.location.href = "../pages/hero.html";
             })
             .catch((error) => {
                 // Handle Errors here.
@@ -78,7 +78,7 @@ signUp.addEventListener("click", function () {
             const user = userCredentials.user;
             console.log(user);
             console.log("user created successfully");
-            window.location.href = "../pages/index.html";
+            window.location.href = "../pages/hero.html";
         })
         .catch((error) => {
             const errorCode = error.code;
@@ -101,7 +101,7 @@ signInNormal.addEventListener("click", function () {
             const user = userCredential.user;
             // ...
             console.log("logged in");
-            window.location.href = "../pages/index.html";
+            window.location.href = "../pages/hero.html";
             console.log("page changed");
         })
         .catch((error) => {
@@ -110,6 +110,6 @@ signInNormal.addEventListener("click", function () {
         });
 });
 
-const addingPassword = document.getElementById("add-more-password");
+// const addingPassword = document.getElementById("add-more-password");
 
 

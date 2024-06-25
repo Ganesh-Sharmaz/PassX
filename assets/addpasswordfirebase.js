@@ -18,7 +18,7 @@ import {
 
 const navHome = document.getElementById("home");
 navHome.addEventListener("click", () => {
-    window.location.href = "../pages/index.html"
+    window.location.href = "../pages/hero.html"
 })
 
 const firebaseConfig = {
